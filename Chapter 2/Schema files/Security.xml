@@ -1,0 +1,26 @@
+<pnp:Security>
+<pnp:SiteGroups>
+  <pnp:SiteGroup Title="Cloudhadi Users" Description="Group for all business users" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Food Executives" Description="Group for product executives for Food" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Electronics Executives" Description="Group for product executives for Electronics" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Furniture Executives" Description="Group for product executives for Furniture" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Food Leads" Description="Group for product leads for Food" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Electronics Leads" Description="Group for product leads for Electronics" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Furniture Leads" Description="Group for product leads for Furniture" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Service Executives" Description="Group for service desk executives" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+  <pnp:SiteGroup Title="Site Administrators" Description="Group for site administrators" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+</pnp:SiteGroups>
+<pnp:Permissions>
+  <pnp:RoleAssignments>
+    <pnp:RoleAssignment Principal="Cloudhadi Users" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Food Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Electronics Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Furniture Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Food Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Electronics Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Furniture Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Service Executives" RoleDefinition="{roledefinition:Reader}" />
+    <pnp:RoleAssignment Principal="Site Administrators" RoleDefinition="{roledefinition:Administrator}" />
+  </pnp:RoleAssignments>
+</pnp:Permissions>
+</pnp:Security>

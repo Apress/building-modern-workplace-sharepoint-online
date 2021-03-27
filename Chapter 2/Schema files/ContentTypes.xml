@@ -1,0 +1,45 @@
+<pnp:ContentTypes>
+  <pnp:ContentType ID="0x010100C1B123C08DD74EB7B8ABE22C7D89C293" Name="Cloudhadi Document" Description="For product documents" Group="Cloudhadi Content Types">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="B9114FE0-6AB0-4AC8-986F-6E8EF9515B56" Name="ProductName" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="4298CA83-4D90-4826-903C-755649CFB45C" Name="ProductType" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="746D7D9C-7A08-4E7D-9480-804601EF2111" Name="ProductLead" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="B1970C42-76FB-4FE4-AF12-65A3AE8A4E49" Name="ReviewDate" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="6757A127-3692-4548-878A-6596F4DED93B" Name="InspectionRequired" Required="false" UpdateChildren="true" />
+      <pnp:FieldRef ID="555653F3-12BC-4487-8ED9-C1F87D73DC91" Name="InspectionLead" Required="false" UpdateChildren="true" />
+      <pnp:FieldRef ID="8D6E884A-C16B-430D-8410-415E1F4E3981" Name="DocumentType" Required="true" UpdateChildren="true" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+  <pnp:ContentType ID="0x0120D52000A0759C7CB1BD41F3A46AC682755F0FA1" Name="Cloudhadi Document Set" Description="For product document set" Group="Cloudhadi Content Types">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="4298CA83-4D90-4826-903C-755649CFB45C" Name="ProductType" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="F65BB8F3-D1E0-4FDF-B783-45940F23638E" Name="Activity" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="73610C4A-C4E8-4C90-AE1D-A9955D6E2FBC" Name="Startedon" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="5BDDD9A5-DDEA-4976-B5C2-BE2247C1CB4E" Name="Capacity" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="F7AD6719-9669-4D32-AFE8-2BC8FA7E8DB7" Name="Licencevalidtill" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="F3512954-565F-4AEB-AD29-A080FFE34D88" Name="Goal" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="11D219F2-E845-47F2-B9E4-75F904659783" Name="QualityRating" Required="true" UpdateChildren="true" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+  <pnp:ContentType ID="0x010067B88C4E585D4F2BA6496757590983F2" Name="Cloudhadi Product" Description="For products" Group="Cloudhadi Content Types">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="B9114FE0-6AB0-4AC8-986F-6E8EF9515B56" Name="ProductName" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="4298CA83-4D90-4826-903C-755649CFB45C" Name="ProductType" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="28FF0BE4-2408-46F2-AA7E-A3B7EA1A93F8" Name="MaterialsUsed" Required="false" UpdateChildren="true" />
+      <pnp:FieldRef ID="C88176A1-20F0-451D-AB09-C72EE53944CF" Name="InspectionCompletedDate" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="DF798B76-8622-439D-BF85-E47202A8B72C" Name="ManufacturedDate" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="728C8D74-8364-4531-9396-8D74267C069B" Name="ExpiryDate" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="B6555F8B-946A-4EF3-8C19-5344D52F6A2F" Name="ProductFeatures" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="4C2DA4DD-3AF6-4775-8967-8C45411518CB" Name="ProductStatus" Required="true" UpdateChildren="true" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+  <pnp:ContentType ID="0x0100C0C6636718D340F1B92019A3D33D5DE8" Name="Cloudhadi Service" Description="For service requests" Group="Cloudhadi Content Types">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="05D34EF6-9F98-42D5-99D4-63EC96086302" Name="RequestTitle" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="0B501881-098F-45F9-89BD-77A0C4443C9C" Name="RequestDescription" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="94FA1F37-2171-4E46-A20E-2B8ED283A92F" Name="Related to" Required="false" UpdateChildren="true" />
+      <pnp:FieldRef ID="F4F0127E-E953-4D86-92D0-EDCAC10BC05A" Name="RequestStatus" Required="true" UpdateChildren="true" />
+      <pnp:FieldRef ID="079FF054-1F50-4BD5-932F-9F651A1958AF" Name="RequestAssignedTo" Required="true" UpdateChildren="true" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+</pnp:ContentTypes> 

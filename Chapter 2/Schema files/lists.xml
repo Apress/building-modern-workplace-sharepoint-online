@@ -1,0 +1,21 @@
+<pnp:Lists>
+  <pnp:ListInstance Title="Product Data" Description="Product Data library" TemplateType="101" Url="ProductData" EnableModeration="true" ContentTypesEnabled="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="2">
+    <pnp:ContentTypeBindings>
+      <pnp:ContentTypeBinding ContentTypeID="0x010100C1B123C08DD74EB7B8ABE22C7D89C293" Default="true" />
+      <pnp:ContentTypeBinding ContentTypeID="0x0120D52000A0759C7CB1BD41F3A46AC682755F0FA1" />
+      <pnp:ContentTypeBinding ContentTypeID="0x0101" Remove="true"/>
+    </pnp:ContentTypeBindings>
+  </pnp:ListInstance >
+  <pnp:ListInstance Title="Products" Description="Products list" TemplateType="100" Url="Products" ContentTypesEnabled="true">
+    <pnp:ContentTypeBindings>
+      <pnp:ContentTypeBinding ContentTypeID="0x010067B88C4E585D4F2BA6496757590983F2" Default="true" />
+      <pnp:ContentTypeBinding ContentTypeID="0x01" Remove="true"/>
+    </pnp:ContentTypeBindings>
+  </pnp:ListInstance>
+  <pnp:ListInstance Title="Service Portal" Description="Service portal list" TemplateType="100" Url="ServicePortal" ContentTypesEnabled="true">
+    <pnp:ContentTypeBindings>
+      <pnp:ContentTypeBinding ContentTypeID="0x0100C0C6636718D340F1B92019A3D33D5DE8" Default="true" />
+      <pnp:ContentTypeBinding ContentTypeID="0x01" Remove="true"/>
+    </pnp:ContentTypeBindings>
+  </pnp:ListInstance>
+</pnp:Lists>

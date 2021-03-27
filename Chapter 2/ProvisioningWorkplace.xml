@@ -1,0 +1,169 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+    <pnp:Templates ID="CONTAINER-TEMPLATE-57A385BB2A25469BB111BF5A84D34815">
+        <pnp:ProvisioningTemplate ID="TEMPLATE-57A385BB2A25469BB111BF5A84D34815" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+
+            <pnp:Security>
+                <pnp:SiteGroups>
+                    <pnp:SiteGroup Title="Cloudhadi Users" Description="Group for all business users" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Food Executives" Description="Group for product executives for Food" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Electronics Executives" Description="Group for product executives for Electronics" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Furniture Executives" Description="Group for product executives for Furniture" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Food Leads" Description="Group for product leads for Food" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Electronics Leads" Description="Group for product leads for Electronics" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Furniture Leads" Description="Group for product leads for Furniture" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Service Executives" Description="Group for service desk executives" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                    <pnp:SiteGroup Title="Site Administrators" Description="Group for site administrators" Owner="i:0#.f|membership|CHWorkplaceAdmin@cloudhadi.onmicrosoft.com" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                </pnp:SiteGroups>
+                <pnp:Permissions>
+                    <pnp:RoleAssignments>
+                        <pnp:RoleAssignment Principal="Cloudhadi Users" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Food Executives" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Electronics Executives" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Furniture Executives" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Food Leads" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Electronics Leads" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Furniture Executives" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Service Executives" RoleDefinition="{roledefinition:Reader}" />
+                        <pnp:RoleAssignment Principal="Site Administrators" RoleDefinition="{roledefinition:Administrator}" />
+                    </pnp:RoleAssignments>
+                </pnp:Permissions>
+            </pnp:Security>
+
+            <pnp:SiteFields>
+                <Field ID="B9114FE0-6AB0-4AC8-986F-6E8EF9515B56" DisplayName="Product Name" Name="ProductName" Type="Text" Group="Cloudhadi Columns" />
+                <Field ID="4298CA83-4D90-4826-903C-755649CFB45C" DisplayName="Product Type" Name="ProductType" Type="Choice" Group="Cloudhadi Columns">
+                    <CHOICES>
+                        <CHOICE>Food</CHOICE>
+                        <CHOICE>Electronics</CHOICE>
+                        <CHOICE>Furniture</CHOICE>
+                    </CHOICES>
+                    <Default>Draft</Default>
+                </Field>
+                <Field ID="746D7D9C-7A08-4E7D-9480-804601EF2111" DisplayName="Product Lead" Name="ProductLead" Type="User" UserSelectionMode="PeopleOnly" Group="Cloudhadi Columns" />
+                <Field ID="28FF0BE4-2408-46F2-AA7E-A3B7EA1A93F8" DisplayName="Materials Used" Name="MaterialsUsed" Type="Note" Group="Cloudhadi Columns" />
+                <Field ID="C88176A1-20F0-451D-AB09-C72EE53944CF" DisplayName="Inspection Completed Date" Name="InspectionCompletedDate" Type="DateTime" Format="DateOnly" Group="Cloudhadi Columns" />
+                <Field ID="DF798B76-8622-439D-BF85-E47202A8B72C" DisplayName="Manufactured Date" Name="ManufacturedDate" Type="DateTime" Format="DateOnly" Group="Cloudhadi Columns" />
+                <Field ID="728C8D74-8364-4531-9396-8D74267C069B" DisplayName="Expiry Date" Name="ExpiryDate" Type="DateTime" Format="DateOnly" Group="Cloudhadi Columns" />
+                <Field ID="B6555F8B-946A-4EF3-8C19-5344D52F6A2F" DisplayName="Product Features" Name="ProductFeatures" Type="Note" Group="Cloudhadi Columns" />
+                <Field ID="4C2DA4DD-3AF6-4775-8967-8C45411518CB" DisplayName="Product Status" Name="ProductStatus" Type="Choice" Group="Cloudhadi Columns">
+                    <CHOICES>
+                        <CHOICE>New</CHOICE>
+                        <CHOICE>In production</CHOICE>
+                        <CHOICE>Completed</CHOICE>
+                    </CHOICES>
+                    <Default>New</Default>
+                </Field>
+                <Field ID="B1970C42-76FB-4FE4-AF12-65A3AE8A4E49" DisplayName="Review Date" Name="ReviewDate" Type="DateTime" Format="DateOnly" Group="Cloudhadi Columns" />
+                <Field ID="6757A127-3692-4548-878A-6596F4DED93B" DisplayName="Do inspection required" Name="InspectionRequired" Type="Boolean" Group="Cloudhadi Columns" />
+                <Field ID="555653F3-12BC-4487-8ED9-C1F87D73DC91" DisplayName="Inspection Lead" Name="InspectionLead" Type="User" UserSelectionMode="PeopleOnly" Group="Cloudhadi Columns" />
+                <Field ID="8D6E884A-C16B-430D-8410-415E1F4E3981" DisplayName="Document Type" Name="DocumentType" Type="Choice" Group="Cloudhadi Columns">
+                    <CHOICES>
+                        <CHOICE>Product Information</CHOICE>
+                        <CHOICE>Product Inspection details</CHOICE>
+                        <CHOICE>Product Tooling Data</CHOICE>
+                        <CHOICE>Product Materials Information</CHOICE>
+                        <CHOICE>Other</CHOICE>
+                    </CHOICES>
+                    <Default>New</Default>
+                </Field>
+                <Field ID="F65BB8F3-D1E0-4FDF-B783-45940F23638E" DisplayName="Activity" Name="Activity" Type="Text" Group="Cloudhadi Columns" />
+                <Field ID="73610C4A-C4E8-4C90-AE1D-A9955D6E2FBC" DisplayName="Started on" Name="Startedon" Type="DateTime" Format="DateOnly" Group="Cloudhadi Columns" />
+                <Field ID="5BDDD9A5-DDEA-4976-B5C2-BE2247C1CB4E" DisplayName="Capacity" Name="Capacity" Type="Number" Group="Cloudhadi Columns" />
+                <Field ID="F7AD6719-9669-4D32-AFE8-2BC8FA7E8DB7" DisplayName="Licence valid till" Name="Licencevalidtill" Type="DateTime" Format="DateOnly" Group="Cloudhadi Columns" />
+                <Field ID="F3512954-565F-4AEB-AD29-A080FFE34D88" DisplayName="Goal" Name="Goal" Type="Text" Group="Cloudhadi Columns" />
+                <Field ID="11D219F2-E845-47F2-B9E4-75F904659783" DisplayName="Quality Rating" Name="QualityRating" Type="Number" Group="Cloudhadi Columns" />
+                <Field ID="05D34EF6-9F98-42D5-99D4-63EC96086302" DisplayName="Request Title" Name="RequestTitle" Type="Text" Group="Cloudhadi Columns" />
+                <Field ID="0B501881-098F-45F9-89BD-77A0C4443C9C" DisplayName="Request Description" Name="RequestDescription" Type="Note" Group="Cloudhadi Columns" />
+                <Field ID="94FA1F37-2171-4E46-A20E-2B8ED283A92F" DisplayName="Relatedto" Name="Relatedto" Type="Choice" Group="Cloudhadi Columns">
+                    <CHOICES>
+                        <CHOICE>Access</CHOICE>
+                        <CHOICE>Materials</CHOICE>
+                        <CHOICE>Equipments</CHOICE>
+                        <CHOICE>General</CHOICE>
+                    </CHOICES>
+                    <Default>New</Default>
+                </Field>
+                <Field ID="F4F0127E-E953-4D86-92D0-EDCAC10BC05A" DisplayName="Request Status" Name="RequestStatus" Type="Choice" Group="Cloudhadi Columns">
+                    <CHOICES>
+                        <CHOICE>New</CHOICE>
+                        <CHOICE>In progress</CHOICE>
+                        <CHOICE>Resolved</CHOICE>
+                        <CHOICE>Completed</CHOICE>
+                        <CHOICE>Rejected</CHOICE>
+                        <CHOICE>Reopened</CHOICE>
+                    </CHOICES>
+                    <Default>New</Default>
+                </Field>
+                <Field ID="079FF054-1F50-4BD5-932F-9F651A1958AF" DisplayName="Request Assigned To" Name="RequestAssignedTo" Type="User" UserSelectionMode="PeopleOnly" Group="Cloudhadi Columns" />
+            </pnp:SiteFields>
+
+            <pnp:ContentTypes>
+                <pnp:ContentType ID="0x010100C1B123C08DD74EB7B8ABE22C7D89C293" Name="Cloudhadi Document" Description="For product documents" Group="Cloudhadi Content Types">
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="B9114FE0-6AB0-4AC8-986F-6E8EF9515B56" Name="ProductName" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="4298CA83-4D90-4826-903C-755649CFB45C" Name="ProductType" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="746D7D9C-7A08-4E7D-9480-804601EF2111" Name="ProductLead" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="B1970C42-76FB-4FE4-AF12-65A3AE8A4E49" Name="ReviewDate" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="6757A127-3692-4548-878A-6596F4DED93B" Name="InspectionRequired" Required="false" UpdateChildren="true" />
+                        <pnp:FieldRef ID="555653F3-12BC-4487-8ED9-C1F87D73DC91" Name="InspectionLead" Required="false" UpdateChildren="true" />
+                        <pnp:FieldRef ID="8D6E884A-C16B-430D-8410-415E1F4E3981" Name="DocumentType" Required="true" UpdateChildren="true" />
+                    </pnp:FieldRefs>
+                </pnp:ContentType>
+                <pnp:ContentType ID="0x0120D52000A0759C7CB1BD41F3A46AC682755F0FA1" Name="Cloudhadi Document Set" Description="For product document set" Group="Cloudhadi Content Types">
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="4298CA83-4D90-4826-903C-755649CFB45C" Name="ProductType" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="F65BB8F3-D1E0-4FDF-B783-45940F23638E" Name="Activity" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="73610C4A-C4E8-4C90-AE1D-A9955D6E2FBC" Name="Startedon" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="5BDDD9A5-DDEA-4976-B5C2-BE2247C1CB4E" Name="Capacity" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="F7AD6719-9669-4D32-AFE8-2BC8FA7E8DB7" Name="Licencevalidtill" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="F3512954-565F-4AEB-AD29-A080FFE34D88" Name="Goal" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="11D219F2-E845-47F2-B9E4-75F904659783" Name="QualityRating" Required="true" UpdateChildren="true" />
+                    </pnp:FieldRefs>
+                </pnp:ContentType>
+                <pnp:ContentType ID="0x010067B88C4E585D4F2BA6496757590983F2" Name="Cloudhadi Product" Description="For products" Group="Cloudhadi Content Types">
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="B9114FE0-6AB0-4AC8-986F-6E8EF9515B56" Name="ProductName" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="4298CA83-4D90-4826-903C-755649CFB45C" Name="ProductType" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="28FF0BE4-2408-46F2-AA7E-A3B7EA1A93F8" Name="MaterialsUsed" Required="false" UpdateChildren="true" />
+                        <pnp:FieldRef ID="C88176A1-20F0-451D-AB09-C72EE53944CF" Name="InspectionCompletedDate" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="DF798B76-8622-439D-BF85-E47202A8B72C" Name="ManufacturedDate" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="728C8D74-8364-4531-9396-8D74267C069B" Name="ExpiryDate" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="B6555F8B-946A-4EF3-8C19-5344D52F6A2F" Name="ProductFeatures" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="4C2DA4DD-3AF6-4775-8967-8C45411518CB" Name="ProductStatus" Required="true" UpdateChildren="true" />
+                    </pnp:FieldRefs>
+                </pnp:ContentType>
+                <pnp:ContentType ID="0x0100C0C6636718D340F1B92019A3D33D5DE8" Name="Cloudhadi Service" Description="For service requests" Group="Cloudhadi Content Types">
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="05D34EF6-9F98-42D5-99D4-63EC96086302" Name="RequestTitle" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="0B501881-098F-45F9-89BD-77A0C4443C9C" Name="RequestDescription" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="94FA1F37-2171-4E46-A20E-2B8ED283A92F" Name="Relatedto" Required="false" UpdateChildren="true" />
+                        <pnp:FieldRef ID="F4F0127E-E953-4D86-92D0-EDCAC10BC05A" Name="RequestStatus" Required="true" UpdateChildren="true" />
+                        <pnp:FieldRef ID="079FF054-1F50-4BD5-932F-9F651A1958AF" Name="RequestAssignedTo" Required="true" UpdateChildren="true" />
+                    </pnp:FieldRefs>
+                </pnp:ContentType>
+            </pnp:ContentTypes>
+
+            <pnp:Lists>
+                <pnp:ListInstance Title="Product Data" Description="Product Data library" TemplateType="101" Url="ProductData" EnableModeration="true" ContentTypesEnabled="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="2">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x010100C1B123C08DD74EB7B8ABE22C7D89C293" Default="true" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x0120D52000A0759C7CB1BD41F3A46AC682755F0FA1" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x0101" Remove="true"/>
+                    </pnp:ContentTypeBindings>
+                </pnp:ListInstance >
+                <pnp:ListInstance Title="Products" Description="Products list" TemplateType="100" Url="Products" ContentTypesEnabled="true">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x010067B88C4E585D4F2BA6496757590983F2" Default="true" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x01" Remove="true"/>
+                    </pnp:ContentTypeBindings>
+                </pnp:ListInstance>
+                <pnp:ListInstance Title="Service Portal" Description="Service portal list" TemplateType="100" Url="ServicePortal" ContentTypesEnabled="true">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x0100C0C6636718D340F1B92019A3D33D5DE8" Default="true" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x01" Remove="true"/>
+                    </pnp:ContentTypeBindings>
+                </pnp:ListInstance>
+            </pnp:Lists>
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>
