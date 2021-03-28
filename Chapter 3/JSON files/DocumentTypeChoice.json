@@ -1,0 +1,245 @@
+{
+    "elmType": "div",
+    "style": {
+      "flex-wrap": "wrap",
+      "display": "flex"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "padding": "4px 8px 5px 8px",
+          "display": "flex",
+          "border-radius": "16px",
+          "height": "24px",
+          "align-items": "center",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "margin": "4px 4px 4px 4px"
+        },
+        "attributes": {
+          "class": {
+            "operator": ":",
+            "operands": [
+              {
+                "operator": "==",
+                "operands": [
+                  "[$DocumentType]",
+                  "Product Information"
+                ]
+              },
+              "sp-css-backgroundColor-blueBackground37",
+              {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$DocumentType]",
+                      "Product Inspection details"
+                    ]
+                  },
+                  "sp-css-backgroundColor-successBackground50",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$DocumentType]",
+                          "Product Tooling Data"
+                        ]
+                      },
+                      "sp-css-backgroundColor-warningBackground50",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$DocumentType]",
+                              "Product Materials Information"
+                            ]
+                          },
+                          "sp-css-backgroundColor-blockingBackground50",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$DocumentType]",
+                                  "Other"
+                                ]
+                              },
+                              "sp-css-backgroundColor-errorBackground50",
+                              "sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "line-height": "16px",
+              "height": "14px"
+            },
+            "attributes": {
+              "iconName": {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$DocumentType]",
+                      "Product Information"
+                    ]
+                  },
+                  "",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$DocumentType]",
+                          "Product Inspection details"
+                        ]
+                      },
+                      "",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$DocumentType]",
+                              "Product Tooling Data"
+                            ]
+                          },
+                          "",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$DocumentType]",
+                                  "Product Materials Information"
+                                ]
+                              },
+                              "",
+                              {
+                                "operator": ":",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "[$DocumentType]",
+                                      "Other"
+                                    ]
+                                  },
+                                  "",
+                                  ""
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "overflow": "hidden",
+              "text-overflow": "ellipsis",
+              "padding": "0 3px"
+            },
+            "txtContent": "[$DocumentType]",
+            "attributes": {
+              "class": {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$DocumentType]",
+                      "Product Information"
+                    ]
+                  },
+                  "",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$DocumentType]",
+                          "Product Inspection details"
+                        ]
+                      },
+                      "",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$DocumentType]",
+                              "Product Tooling Data"
+                            ]
+                          },
+                          "",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$DocumentType]",
+                                  "Product Materials Information"
+                                ]
+                              },
+                              "",
+                              {
+                                "operator": ":",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "[$DocumentType]",
+                                      "Other"
+                                    ]
+                                  },
+                                  "",
+                                  ""
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

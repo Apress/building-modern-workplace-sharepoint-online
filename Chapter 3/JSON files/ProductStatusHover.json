@@ -1,0 +1,29 @@
+{
+   "elmType":"div",
+   "style":{
+      "font-size":"12px"
+   },
+   "txtContent":"[$ProductStatus]",
+   "customCardProps":{
+      "formatter":{
+         "elmType":"img",
+         "style":{
+            "width":"150px",
+            "height":"100px",
+            "border-radius":"8px",
+            "border":"1px solid #ddd",
+            "padding":"10px"
+         },
+         "attributes":{
+            "src":"=if([$ProductStatus] == 'Completed', '/sites/Workplace/Shared%20Documents/Completed.jpg', if([$ProductStatus] == 'In production','/sites/Workplace/Shared%20Documents/Inproduction.jpg', '/sites/Workplace/Shared%20Documents/New.jpg')",
+            "title":"[$ProductStatus]"
+         }
+      },
+      "openOnEvent":"hover",
+      "directionalHint":"bottomCenter",
+      "isBeakVisible":true,
+      "beakStyle":{
+         "backgroundColor":"white"
+      }
+   }
+}

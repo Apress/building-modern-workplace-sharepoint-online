@@ -1,0 +1,33 @@
+{
+ "elmType": "span",
+  "style": {
+    "color": "white",
+    "background-color": "#3d7b80",
+    "border": "1px solid",
+    "border-radius": "8px",
+    "padding-left": "8px",
+    "visibility": true
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "attributes": {
+        "iconName": "flow"
+      }
+    },
+    {
+      "elmType": "button",
+      "style": {
+        "background-color": "inherit",
+        "border": "none",
+        "color": "white",
+        "cursor": "pointer"
+      },
+      "txtContent": "Initiate Approval",
+      "customRowAction": {
+        "action": "",
+        "actionParams": ""
+      }
+    }
+  ]
+}
