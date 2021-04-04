@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://cloudhadi.sharepoint.com/sites/Workplace/SitePages/Home.aspx",
+      "customActions": {
+        "6df126bd-b63e-45e1-b930-a7cc3dc360b1": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "serviceExtension": {
+      "pageUrl": "https://cloudhadi.sharepoint.com/sites/Workplace/SitePages/Home.aspx",
+      "customActions": {
+        "6df126bd-b63e-45e1-b930-a7cc3dc360b1": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
