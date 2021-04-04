@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cloudhadi-service-portal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cloudhadiServicePortal/CloudhadiServicePortalWebPart.js",
+          "manifest": "./src/webparts/cloudhadiServicePortal/CloudhadiServicePortalWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CloudhadiServicePortalWebPartStrings": "lib/webparts/cloudhadiServicePortal/loc/{locale}.js"
+  }
+}

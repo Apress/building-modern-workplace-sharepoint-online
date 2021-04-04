@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cloudhadi-service-portal-client-side-solution",
+    "id": "6b953897-a1f3-4067-9347-601258e66a97",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/cloudhadi-service-portal.sppkg"
+  }
+}
